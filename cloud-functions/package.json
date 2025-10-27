@@ -1,0 +1,18 @@
+{
+  "name": "task-manager-cloud-functions",
+  "version": "1.0.0",
+  "description": "Cloud Functions for Task Manager notifications and background processing",
+  "main": "index.js",
+  "scripts": {
+    "deploy:daily-summary": "gcloud functions deploy dailySummary --runtime nodejs18 --trigger-topic daily-summary --region us-central1",
+    "deploy:task-reminder": "gcloud functions deploy taskReminder --runtime nodejs18 --trigger-topic task-reminder --region us-central1",
+    "deploy:async-processor": "gcloud functions deploy asyncTaskProcessor --runtime nodejs18 --trigger-topic async-tasks --region us-central1"
+  },
+  "dependencies": {
+    "@google-cloud/functions-framework": "^3.3.0",
+    "@google-cloud/pubsub": "^4.0.0",
+    "axios": "^1.6.0",
+    "nodemailer": "^6.9.7",
+    "twilio": "^4.19.0"
+  }
+}
