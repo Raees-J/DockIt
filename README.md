@@ -356,18 +356,5 @@ lsof -ti:5000 | xargs kill -9
 - Check CORS configuration in `server.js`
 - Verify `REACT_APP_SOCKET_URL` matches backend URL
 
-## 📝 License
-
-MIT License - feel free to use this project for learning or production purposes.
-
-## 👥 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## 📧 Support
-
-For issues or questions, please open an issue on the GitHub repository.
-
----
-
 **Built with ❤️ using the MERN Stack**
+
