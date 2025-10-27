@@ -1,0 +1,15 @@
+runtime: nodejs18
+
+env_variables:
+  NODE_ENV: production
+  MONGODB_URI: your-mongodb-atlas-connection-string
+  JWT_SECRET: your-jwt-secret
+  CLIENT_URL: https://your-app-name.uc.r.appspot.com
+  GOOGLE_CLOUD_PROJECT_ID: your-project-id
+  GOOGLE_CLOUD_BUCKET_NAME: your-bucket-name
+  GOOGLE_AI_API_KEY: your-google-ai-api-key
+
+automatic_scaling:
+  min_instances: 0
+  max_instances: 10
+  target_cpu_utilization: 0.6
